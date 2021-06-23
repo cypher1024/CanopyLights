@@ -171,7 +171,6 @@ void check_button(){
 
 bool check_door_switch(){
 	// This is very similar to the button code above
-	// Returns true 
 	static uint8_t old_switch_state = LOW;
 	static uint32_t last_switch_transition = 0;
 	
