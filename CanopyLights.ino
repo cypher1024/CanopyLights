@@ -61,7 +61,7 @@ bool relay_enabled = true;
 
 void paint_leds(){
 	if (millis() - last_led_update > LED_UPDATE_PERIOD || force_update){
-		// Set the relay
+		// Use the relay to turn the power to the LEDs on or off
 		if (current_colour == LEDS_OFF){
 			digitalWrite(LED_RELAY_PIN, LOW);
 			relay_enabled = false;
